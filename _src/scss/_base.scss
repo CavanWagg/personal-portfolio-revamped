@@ -1,0 +1,51 @@
+/* ===========================
+   Base
+   =========================== */
+
+html, body {
+	font-size: 62.5%;
+}
+
+body {
+	background-color: $red;
+	color: $basic;
+
+	transition: all .2s ease-in-out;
+
+	// These are mixins for Media Queries. //
+	@include screen-sm {
+		background-color: $facebook;
+		color: rgba($basic, .9);
+	}
+
+	@include screen-lg {
+		background-color: $blue;
+		
+	}
+
+	// Remove Greeting. Welcome!
+	&:before {
+		align-items: center;
+		content: "Welcome to SASS Quickstart!";
+		display: flex;
+		font-family: $font1;
+		font-size: 3rem;
+		justify-content: center;
+		height: 100vh;
+		text-align: center;
+		transition: all .2s ease-in-out;
+		width: 100%;
+
+		@include screen-sm {
+			font-size: 4rem;
+		}
+
+		@include screen-md {
+			font-size: 5rem;
+		}
+
+		@include screen-lg {
+			font-size: 6rem;
+		}
+	}
+}
