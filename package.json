@@ -22,7 +22,7 @@
   "license": "ISC",
   "devDependencies": {
     "bourbon": "^5.0.1",
-    "browser-sync": "^2.24.7",
+    "browser-sync": "^2.26.3",
     "font-awesome": "^4.7.0",
     "gulp-clean-css": "^3.9.2",
     "gulp-concat": "^2.6.1",
@@ -43,7 +43,7 @@
   },
   "dependencies": {
     "gulp": "^3.9.1",
-    "lodash": "^4.17.5",
+    "lodash": "^4.17.11",
     "npm": "^6.4.1"
   }
 }
